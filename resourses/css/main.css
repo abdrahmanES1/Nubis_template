@@ -1,38 +1,104 @@
 /* Variables */
 :root {
-    --blue: #314584;
-    --sec-blue: #f4fbff;
-    --red: #ff3946;
-    --white: #fffefe;
-    --gray: #6e757a;
-    --btn-padding: 17px 35px;
-  }
-  /* End Variables */
-  /* Global Rules */
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: "Work Sans", sans-serif;
-    text-transform: capitalize;
-  }
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  
+  --blue: #314584;
+  --sec-blue: #0092ff;
+  --red: #ff3946;
+  --white: #fffefe;
+  --gray: #6e757a;
+  --sec-gray: #5e6576;
+  --btn-padding: 17px 35px;
+}
+/* End Variables */
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul,
+li {
+  list-style-type: none;
+  padding: 0px;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  text-transform: capitalize;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* nav .drop-down {
+  display: block;
+} */
+nav ul .drop-down {
+  position: absolute;
+  display: none;
+  right: 75px;
+  top: 65px;
+  border: none;
+  color: #ff3946;
+  background-color: #fcfafb;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
+}
+nav ul .drop-down {
+  padding: 5px 2px;
+}
+nav .navigation ul li {
+  padding: 10px;
+}
+nav .navigation .btn {
+  background-color: var(--sec-blue);
+  padding: 16px 24px;
+  border-radius: 25px;
+  line-height: 0;
+  margin-left: 15px;
+}
+nav .navigation .btn a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+}
+#drop::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+nav .navigation .burger-icon {
+  display: none;
+  flex-direction: column;
+  width: 30px;
+}
+nav .navigation .burger-icon span {
+  height: 2px;
+  width: 100%;
+  margin: 5px;
+  background-color: black;
+}
