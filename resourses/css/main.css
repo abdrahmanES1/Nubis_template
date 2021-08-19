@@ -51,7 +51,6 @@ body {
   }
 }
 /* Meduim */
-
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -74,7 +73,7 @@ body {
 nav {
   padding-top: 10px;
 }
-
+/* logo */
 nav .logo {
   width: 126px;
 }
@@ -82,9 +81,12 @@ nav .logo {
 nav .logo img {
   width: 100%;
 }
-
+/* End logo */
+/* nav items */
 nav .navigation .nav-items li {
   padding: 10px;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 nav .navigation .nav-items li a {
@@ -95,6 +97,8 @@ nav .navigation ul li a:hover {
   color: var(--sec-blue);
 }
 
+/* nav items */
+/* icon and display drop dawn menu  */
 #drop-down-icon::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -106,10 +110,25 @@ nav .navigation ul li a:hover {
   border-left: 0.3em solid transparent;
 }
 
-#drop-down-icon:hover .nav-items {
+#drop-down-icon:hover .drop-down {
   display: block;
 }
+/* icon and display drop dawn menu */
 
+/* drop down menu */
+nav .nav-items .drop-down {
+  position: absolute;
+  display: none;
+  border: none;
+  padding: 5px 2px;
+  margin-top: 10px;
+  background-color: #fcfafb;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
+}
+/* End drop down menu  */
+
+/* btn Get quote */
 nav .navigation .btn {
   background-color: var(--sec-blue);
   padding: 16px 24px;
@@ -117,35 +136,22 @@ nav .navigation .btn {
   line-height: 0;
   margin-left: 15px;
   border: 1px solid var(--sec-blue);
+  transition: all 0.4s ease-in-out;
+}
+nav .navigation .btn:hover {
+  background-color: #fcfafb;
 }
 
 nav .navigation .btn a {
-  text-align: center;
-  text-decoration: none;
   color: var(--white);
 }
 
-nav .navigation .btn:hover {
+nav .navigation .btn:hover a {
   color: #0092ff;
-  background-color: #fcfafb;
 }
+/* End btn Get quote */
 
-nav .nav-items .drop-down {
-  position: absolute;
-  display: none;
-  right: 75px;
-  top: 65px;
-  border: none;
-  color: #ff3946;
-  background-color: #fcfafb;
-  border-radius: 5px;
-  box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
-}
-
-nav.nav-items .drop-down {
-  padding: 5px 2px;
-}
-
+/* burger icon  */
 nav .navigation .burger-icon {
   display: none;
   flex-direction: column;
@@ -158,7 +164,6 @@ nav .navigation .burger-icon span {
   margin: 5px;
   background-color: black;
 }
-
 @media (max-width: 992px) {
   nav .navigation .burger-icon {
     display: flex;
@@ -168,6 +173,7 @@ nav .navigation .burger-icon span {
     display: none;
   }
 }
+/* End burger icon  */
 
 @media (max-width: 768px) {
   nav .navigation .nav-items,
