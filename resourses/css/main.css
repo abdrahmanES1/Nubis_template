@@ -183,12 +183,16 @@ nav .navigation .burger-icon span {
 }
 
 @media (max-width: 992px) {
+  nav {
+    padding-top: 15px;
+  }
   nav .navigation .burger-icon {
     display: flex;
   }
   nav .navigation .nav-items,
   nav .navigation .btn {
     display: none;
+    border: 1px solid var(--gray);
   }
   nav .navigation .burger-icon:hover span {
     display: flex;
@@ -198,7 +202,7 @@ nav .navigation .burger-icon span {
   }
   nav .navigation .nav-items {
     position: absolute;
-    top: 75px;
+    top: 55px;
     left: 0px;
     display: flex;
     flex-direction: column;
@@ -216,8 +220,4 @@ nav .navigation .burger-icon span {
 /* End burger icon  */
 
 @media (max-width: 768px) {
-  nav .navigation .nav-items,
-  nav .navigation .btn {
-    display: none;
-  }
 }
