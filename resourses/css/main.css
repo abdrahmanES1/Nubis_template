@@ -201,7 +201,7 @@ nav .navigation .burger-icon span {
     color: red;
     background-color: red;
   }
-  nav .navigation .nav-items {
+  nav .navigation .isShow {
     position: absolute;
     top: 55px;
     left: 0px;
@@ -212,6 +212,7 @@ nav .navigation .burger-icon span {
     background-color: var(--white);
     width: 100%;
     box-shadow: var(--box-shadow);
+    transition: all 0.4s ease-in-out;
   }
   nav .navigation .nav-items li {
     color: #fcfafb;
