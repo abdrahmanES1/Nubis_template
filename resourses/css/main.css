@@ -8,10 +8,13 @@
   --gray: #6e757a;
   --sec-gray: #5e6576;
   --btn-padding: 17px 35px;
+  --box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
 }
 /* End Variables */
 /* Global Rules */
 * {
+  margin: 0px;
+  padding: 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -28,8 +31,9 @@ li {
   padding: 0px;
 }
 body {
-  font-family: "Work Sans", sans-serif;
-  text-transform: capitalize;
+  font: 400 1rem/1.625rem system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .container-fluid {
   width: 100%;
@@ -71,7 +75,8 @@ body {
 
 /* region global rules */
 nav {
-  padding-top: 10px;
+  padding-top: 35px;
+  height: 100%;
 }
 /* logo */
 nav .logo {
@@ -86,7 +91,8 @@ nav .logo img {
 nav .navigation .nav-items li {
   padding: 10px;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
 }
 
 nav .navigation .nav-items li a {
@@ -120,12 +126,23 @@ nav .nav-items .drop-down {
   position: absolute;
   display: none;
   border: none;
-  padding: 5px 2px;
+  padding: 5px;
   margin-top: 10px;
   background-color: #fcfafb;
   border-radius: 5px;
   box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
 }
+nav .nav-items .drop-down li {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+}
+nav .nav-items .drop-down li:last-of-type {
+  border: none;
+}
+
 /* End drop down menu  */
 
 /* btn Get quote */
@@ -164,6 +181,7 @@ nav .navigation .burger-icon span {
   margin: 5px;
   background-color: black;
 }
+
 @media (max-width: 992px) {
   nav .navigation .burger-icon {
     display: flex;
@@ -172,7 +190,29 @@ nav .navigation .burger-icon span {
   nav .navigation .btn {
     display: none;
   }
+  nav .navigation .burger-icon:hover span {
+    display: flex;
+    flex-direction: column;
+    color: red;
+    background-color: red;
+  }
+  nav .navigation .nav-items {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: var(--box-shadow);
+  }
+  nav .navigation .nav-items li {
+    color: #fcfafb;
+  }
 }
+
 /* End burger icon  */
 
 @media (max-width: 768px) {
