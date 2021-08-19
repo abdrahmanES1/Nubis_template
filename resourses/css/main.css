@@ -24,6 +24,7 @@ a {
 }
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 ul,
 li {
