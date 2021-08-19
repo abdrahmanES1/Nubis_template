@@ -173,16 +173,19 @@ nav .navigation .btn:hover a {
 nav .navigation .burger-icon {
   display: none;
   flex-direction: column;
+
+  align-items: center;
   width: 30px;
 }
 
 nav .navigation .burger-icon span {
   height: 2px;
   width: 100%;
-  margin: 5px;
+  margin: 4px;
   background-color: black;
 }
-
+/* End burger icon */
+/*  */
 @media (max-width: 992px) {
   nav {
     padding-top: 15px;
@@ -193,15 +196,12 @@ nav .navigation .burger-icon span {
   nav .navigation .nav-items,
   nav .navigation .btn {
     display: none;
-    border: 1px solid var(--gray);
   }
   nav .navigation .burger-icon:hover span {
     display: flex;
     flex-direction: column;
-    color: red;
-    background-color: red;
   }
-  nav .navigation .isShow {
+  nav .navigation .drop-down-is-showing {
     position: absolute;
     top: 55px;
     left: 0px;
@@ -215,11 +215,9 @@ nav .navigation .burger-icon span {
     transition: all 0.4s ease-in-out;
   }
   nav .navigation .nav-items li {
-    color: #fcfafb;
+    color: black;
   }
 }
-
-/* End burger icon  */
 
 @media (max-width: 768px) {
 }
