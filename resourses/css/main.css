@@ -210,7 +210,6 @@ nav .navigation .btn:hover a {
 nav .navigation .burger-icon {
   display: none;
   flex-direction: column;
-
   align-items: center;
   width: 30px;
 }
@@ -266,6 +265,7 @@ nav .navigation .burger-icon span {
   background-size: cover;
   padding-top: 2em;
   padding-bottom: 5em;
+  text-align: left;
 }
 .box-content {
   display: flex;
@@ -273,7 +273,12 @@ nav .navigation .burger-icon span {
   align-items: center;
 }
 .header .box-content .col-1 {
-  width: 30vw;
+  padding-right: 1rem;
+  width: 50%;
+  flex: 0 0 auto;
+}
+.header .box-content .col-2 {
+  flex: 0 0 auto;
 }
 .header .box-content .col-1 h1 {
   font-size: 3.25rem;
@@ -296,7 +301,29 @@ nav .navigation .burger-icon span {
   font-size: 0.875rem;
   line-height: 0;
 }
-.header .box-content .col-2 img {
-  position: relative;
-  right: -2rem;
+
+@media (max-width: 992px) {
+  .header .box-content {
+    flex-direction: column;
+  }
+  .header .box-content .col-1 {
+    width: auto;
+    padding: 3rem 0rem;
+  }
+  .header .box-content .col-1,
+  .header .box-content .col-2 {
+    text-align: center;
+    right: 0rem;
+  }
+}
+.services {
+  background: url("/resourses/img/header-background.jpg");
+}
+.services h2 {
+  font-size: 2rem;
+  color: var(--blue);
+  line-height: 3.75rem;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.4px;
+  font-weight: 700;
 }

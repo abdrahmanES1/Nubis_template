@@ -11,46 +11,55 @@
     <title>Nubis</title>
     <link rel="shortcut icon" href="/resourses/img/favicon.png" type="image/x-icon">
    <!-- link to normalize for init style of the page -->
-    <!-- <link rel="stylesheet" href="/resourses/css/normalize.css"> -->
+    <link rel="stylesheet" href="/resourses/css/normalize.css">
    <!--  main css style -->
     <link rel="stylesheet" href="/resourses/css/main.css">
+  
+    <script src="https://kit.fontawesome.com/bc09e815cb.js" crossorigin="anonymous"></script>
+
   </head>
 <body>
 
     <nav class="navigation-bar">
       <div class="container d-flex">
+
         <div class="logo">
           <img src="/resourses/img/logo.svg" alt="logo">
         </div>
+
         <div class="navigation d-flex">
+
           <ul class="d-flex nav-items">
+
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Detaile</a></li>
             <li><a href="#">Features</a></li>
             <li id="drop-down-icon"><a href="#" >Drop</a>
-            <ul class="drop-down">
-              <li><a href="#">Article Details</a></li>
-              
-              <li><a href="#">Terms Conditions</a></li>
-              
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
+
+              <ul class="drop-down">
+                <li><a href="#">Article Details</a></li>
+                <li><a href="#">Terms Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+
             </li>
           </ul>
-            <button class="sp-btn btn">Get quote</button>
 
-        <div class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+
+          <button class="sp-btn btn">Get quote</button>
+
+          <div class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
         </div>
       </div>
     </nav>
     
-    <header class="header">
+    <header class="header" id="home">
       <div class="container  box-content">
         <div class="col-1">
           <h1>Find influencers for your products</h1>
@@ -65,7 +74,57 @@
       </div>
     </header>
 
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Explore our services</h2>
+        <div class="contentbox d-flex">
 
+          <div class="col-1">
+            <div class="card">
+              <div class="card-title">
+                <i class="fas fa-headphones-alt"></i>
+              </div>
+              <div class="card-body">
+                <h3></h3>
+                <p></p>
+                <h4 style="font-weight: 400;">Learn more</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+
+            <div class="card-title">
+              <i class="far fa-clipboard"></i>
+             </div>
+            <div class="card-body">
+              <h3></h3>
+              <p></p>
+              <h4 style="font-weight: 400;">Learn more</h4>
+              <span></span>
+            </div>
+
+          </div>
+
+          <div class="col-3">
+
+            <div class="card-title">
+              <i class="far fa-comments"></i>
+            </div>
+            <div class="card-body">
+              <h3></h3>
+              <p></p>
+              <h4 style="font-weight: 400;">Learn more</h4>
+              <span></span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
 <script src="/resourses/js/jquery.js"></script>
 <script src="/resourses/js/animation.js"></script>
