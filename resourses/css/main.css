@@ -1,12 +1,12 @@
 /* #region global rules  */
 /* Variables */
 :root {
-  --blue: #314584;
+  --blue: #223150;
   --sec-blue: #0092ff;
   --red: #ff3946;
   --white: #fffefe;
-  --gray: #6e757a;
-  --sec-gray: #5e6576;
+  --gray: #5c6577;
+  --sec-gray: #809298;
   --btn-padding: 17px 35px;
   --box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
 }
@@ -25,13 +25,15 @@ a {
 html {
   scroll-behavior: smooth;
   user-select: none;
+  height: 200vh;
 }
 ul,
 li {
   list-style-type: none;
   padding: 0px;
 }
-body {
+body,
+p {
   font: 400 1rem/1.625rem system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -48,6 +50,23 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.sp-btn {
+  background-color: var(--sec-blue);
+  border: 1px solid var(--sec-blue);
+  border-radius: 25px;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.sp-btn:hover {
+  background-color: #fcfafb;
+  color: #0092ff;
 }
 /* Small screens */
 @media (min-width: 768px) {
@@ -73,15 +92,34 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.d-flex-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* region global rules */
-nav {
-  padding-top: 35px;
-  height: 100%;
+.fixed-top {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: all 1s ease-in;
+}
+.navigation-bar {
+  padding: 16px 0px 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  box-shadow: var(--box-shadow);
+  background-color: #fdfafa;
 }
 /* logo */
 nav .logo {
   width: 126px;
+  cursor: pointer;
 }
 
 nav .logo img {
@@ -91,9 +129,7 @@ nav .logo img {
 /* nav items */
 nav .navigation .nav-items li {
   padding: 10px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 0.875rem;
+  cursor: pointer;
 }
 
 nav .navigation .nav-items li a {
@@ -154,7 +190,8 @@ nav .navigation .btn {
   line-height: 0;
   margin-left: 15px;
   border: 1px solid var(--sec-blue);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
 }
 nav .navigation .btn:hover {
   background-color: #fcfafb;
@@ -220,4 +257,46 @@ nav .navigation .burger-icon span {
 }
 
 @media (max-width: 768px) {
+}
+
+/* header */
+
+.header {
+  background: url("/resourses/img/header-background.jpg");
+  background-size: cover;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+.box-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .box-content .col-1 {
+  width: 30vw;
+}
+.header .box-content .col-1 h1 {
+  font-size: 3.25rem;
+  color: var(--blue);
+  line-height: 3.75rem;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+}
+.header .box-content .col-1 p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+.header .box-content .col-1 .btn {
+  display: inline-block;
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+}
+.header .box-content .col-2 img {
+  position: relative;
+  right: -2rem;
 }
