@@ -403,7 +403,7 @@ nav .navigation .burger-icon span {
 
 /* costumers section */
 .costumers {
-  background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
+  background: rgb(252, 250, 251);
   text-align: center;
   padding: 5rem 0;
 }
@@ -455,4 +455,77 @@ nav .navigation .burger-icon span {
     flex-direction: column;
   }
 }
-/* costumers section */
+/* End costumers section */
+/* slider section */
+.slider {
+  background: rgb(252, 250, 251);
+  text-align: center;
+  padding: 3rem 0;
+}
+.slider h3 {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+}
+.slider h3 span {
+  color: var(--sec-blue);
+}
+.slider .line {
+  height: 1px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.125);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.swiper-container-multirow-column > .swiper-wrapper {
+  flex-direction: column;
+}
+/* ENd slider section  */
+
+/* invitation */
+.invitation {
+  background: rgb(252, 250, 251);
+  text-align: center;
+  padding: 3rem 0;
+}
+.invitation .box-content {
+  background: url("/resourses/img/invitation-background.jpg");
+  background-size: cover;
+  border-radius: 30px;
+}
+.invitation .box-content {
+  padding: 8rem;
+  text-align: center;
+}
+.invitation .box-content h2,
+.invitation .box-content p {
+  color: var(--white);
+}
+.invitation .box-content p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  width: 35rem;
+}
+.invitation .box-content a {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #17c76c;
+  border-radius: 30px;
+  border: 1px solid #17c76c;
+}
+.invitation .box-content a:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+@media (max-width: 992px) {
+  .invitation .box-content {
+    padding: 4rem;
+  }
+  .invitation .box-content p {
+    width: 30rem;
+  }
+}
+/* End invitation */
+
+/* contact section  */
+/* End contact section*/
