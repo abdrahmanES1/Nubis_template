@@ -483,7 +483,7 @@ nav .navigation .burger-icon span {
 
 /* invitation */
 .invitation {
-  background: rgb(252, 250, 251);
+  background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
   text-align: center;
   padding: 3rem 0;
 }
@@ -528,4 +528,89 @@ nav .navigation .burger-icon span {
 /* End invitation */
 
 /* contact section  */
+
+.contact-me {
+  /* background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255)); */
+  padding: 3rem 0px;
+}
+.contact-me .box-content .col {
+  padding: 2rem;
+}
+
+.contact-me .box-content .col-1 h5 {
+  color: var(--red);
+  margin-bottom: -1rem;
+}
+
+.contact-me .box-content .col-1 h2 {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+.contact-me .box-content .col-1 ul li {
+  color: var(--gray);
+}
+.contact-me .box-content .col-2 form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-me .box-content .col-2 form button {
+  padding: 1rem;
+}
+.contact-me .box-content .col-2 input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 30rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+}
+@media (max-width: 992px) {
+  .contact-me .box-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /* End contact section*/
+
+/* footer section */
+footer.footer {
+  text-align: center;
+  background: rgb(252, 250, 251) url("/resourses/img/decoration-circles.png")
+    no-repeat left;
+  padding: 5rem auto;
+}
+
+.footer .social-media-icons .fa-stack {
+  width: 2em;
+  margin-bottom: 1.25rem;
+  margin-right: 0.375rem;
+  font-size: 1.5rem;
+}
+.footer .social-media-icons .fa-stack .fa-stack-2x {
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+.fa-stack .fa-stack-1x {
+  color: #0092ff;
+  transition: all 0.2s ease;
+}
+
+.footer .social-media-icons .fa-stack a:hover .fa-stack-1x {
+  color: #ffffff;
+}
+.footer .social-media-icons .fa-stack a:hover .fa-stack-2x {
+  color: #0092ff;
+}
+
+.footer .line {
+  height: 1px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.125);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-links {
+}
+
+/* End footer section */
