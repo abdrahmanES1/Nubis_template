@@ -9,6 +9,7 @@
   --sec-gray: #809298;
   --btn-padding: 17px 35px;
   --box-shadow: 0 3px 3px 1px rgb(0 0 0 / 8%);
+  --background-color: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
 }
 /* End Variables */
 /* Global Rules */

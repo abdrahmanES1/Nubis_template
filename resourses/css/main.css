@@ -148,8 +148,7 @@ nav .navigation .burger-icon span {
 @media (max-width: 768px) {
 }
 
-/* header */
-
+/* End header section */
 .header {
   background: url("/resourses/img/header-background.jpg");
   background-size: cover;
@@ -188,10 +187,12 @@ nav .navigation .burger-icon span {
   .header .box-content {
     flex-direction: column;
   }
+
   .header .box-content .col-1 {
     width: auto;
     padding: 3rem 0rem;
   }
+
   .header .box-content .col-1,
   .header .box-content .col-2 {
     text-align: center;
@@ -203,8 +204,12 @@ nav .navigation .burger-icon span {
     padding-top: 0;
   }
 }
+/* End header section */
+
+/*  services section */
 .services {
-  background: url("/resourses/img/header-background.jpg");
+  background: #fcfafb;
+  padding: 2rem 0px;
 }
 
 .services .box-content .col h4,
@@ -217,6 +222,7 @@ nav .navigation .burger-icon span {
 }
 .services .box-content .col .card {
   margin: 0 2rem;
+  padding: 2rem 0;
 }
 .services .box-content .col .card .card-title {
   padding: 1rem;
@@ -256,5 +262,35 @@ nav .navigation .burger-icon span {
   }
   .services .box-content .col .card .card-title {
     margin: 0 auto;
+  }
+}
+/* End services section */
+
+.details {
+  background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
+  padding: 2rem 0px;
+}
+.details .box-content .col {
+  padding: 2rem;
+}
+.details .box-content .col-1 {
+  flex: 0 0 auto;
+}
+
+.details .box-content .col-2 h5 {
+  color: var(--red);
+  margin-bottom: -1rem;
+}
+
+.details .box-content .col-2 h2 {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+.details .box-content .col-2 button {
+  padding: 0.8rem 2rem;
+}
+@media (max-width: 992px) {
+  .details .box-content {
+    flex-direction: column;
   }
 }
