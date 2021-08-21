@@ -327,7 +327,7 @@ nav .navigation .burger-icon span {
 
 .features .box-title {
   max-width: 70%;
-  margin: 5rem auto;
+  margin: 0rem auto;
 }
 .features .box-content .col-1 {
   flex: 0 1 auto;
