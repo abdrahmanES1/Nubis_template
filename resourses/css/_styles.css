@@ -173,3 +173,12 @@ h5,
   background-color: #44434a;
   cursor: pointer;
 }
+.red-to-blue {
+  background: linear-gradient(to right, #ef3d91, #0092ff);
+}
+.blue-to-purple {
+  background: linear-gradient(to right, #0092ff, #637eff);
+}
+.purple-to-green {
+  background: linear-gradient(to right, #637eff, #16c66d);
+}
