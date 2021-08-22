@@ -671,6 +671,408 @@ footer.footer {
 /*                      */
 /************************/
 
+/***********************/
+/*     Extra Pages     */
+/***********************/
+.ex-header {
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  background-color: #fcfafb;
+}
+
+.ex-basic-1 .list-unstyled .fas {
+  font-size: 0.375rem;
+  line-height: 1.625rem;
+}
+
+.ex-basic-1 .list-unstyled .flex-grow-1 {
+  margin-left: 0.5rem;
+}
+
+.ex-basic-1 .text-box {
+  padding: 1.25rem 1.25rem 0.5rem 1.25rem;
+  background-color: #fcfafb;
+}
+
+.ex-cards-1 .card {
+  border: none;
+  background-color: transparent;
+}
+
+.ex-cards-1 .card .fa-stack {
+  width: 2em;
+  font-size: 1.125rem;
+}
+
+.ex-cards-1 .card .fa-stack-2x {
+  color: #0092ff;
+}
+
+.ex-cards-1 .card .fa-stack-1x {
+  width: 2em;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 2.125rem;
+}
+
+.ex-cards-1 .card .list-unstyled .flex-grow-1 {
+  margin-left: 2.25rem;
+}
+
+.ex-cards-1 .card .list-unstyled .flex-grow-1 h5 {
+  margin-top: 0.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/*************************/
+/*     Media Queries     */
+/*************************/
+/* Min-width 768px */
+@media (min-width: 768px) {
+  /* Header */
+  .header {
+    padding-bottom: 5em;
+  }
+
+  .header .h1-large {
+    font-size: 3.25rem;
+    line-height: 3.75rem;
+  }
+  /* end of header */
+
+  /* Statistics */
+  .counter .counter-cell {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+  }
+  /* end of statistics */
+
+  /* Extra Pages */
+  .ex-basic-1 .text-box {
+    padding: 1.75rem 2rem 0.875rem 2rem;
+  }
+  /* end of extra pages */
+}
+/* end of min-width 768px */
+
+/* Min-width 992px */
+@media (min-width: 992px) {
+  /* General Styles */
+  .h2-heading {
+    width: 35.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .p-heading {
+    width: 46rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* end of general styles */
+
+  /* Navigation */
+  .navbar {
+    padding-top: 1.75rem;
+    background-color: #fcfafb;
+    box-shadow: none;
+    transition: all 0.2s;
+  }
+
+  .navbar.top-nav-collapse {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fcfafb;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .offcanvas-collapse {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+    overflow-y: visible;
+    visibility: visible;
+  }
+
+  .offcanvas-collapse.open {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .navbar .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .navbar .nav-item .nav-link {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .navbar .dropdown-menu {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar .dropdown-divider {
+    width: 90%;
+  }
+
+  .navbar .nav-item .btn-solid-sm {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  /* end of navigation */
+
+  /* Header */
+  .header {
+    text-align: left;
+  }
+
+  .header .text-container {
+    margin-top: 4rem;
+  }
+
+  .header .image-container {
+    margin-top: 0;
+  }
+
+  .header .btn-solid-lg,
+  .header .btn-outline-lg {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .header .btn-solid-lg {
+    margin-right: 0.5rem;
+  }
+  /* end of header */
+
+  /* Services */
+  .cards-1 .card {
+    display: inline-block;
+    width: 286px;
+    vertical-align: top;
+  }
+
+  .cards-1 .card:nth-of-type(3n + 2) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  /* end of services */
+
+  /* Details 1 */
+  .basic-1 .image-container {
+    margin-bottom: 0;
+  }
+
+  .basic-1 .text-container {
+    margin-top: 2rem;
+  }
+  /* end of details 1 */
+
+  /* Details 2 */
+  .basic-2 .text-container {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+  /* end of details 2 */
+
+  /* Testimonials */
+  .cards-2 .card {
+    display: inline-block;
+    width: 298px;
+    vertical-align: top;
+  }
+
+  .cards-2 .card:nth-of-type(3n + 2) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  /* end of testimonials */
+
+  /* Invitation */
+  .basic-3 .text-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .basic-3 h2 {
+    width: 42rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .basic-3 .p-large {
+    width: 35rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* end of invitation */
+
+  /* Footer */
+  .footer h4 {
+    width: 46rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* end of footer */
+
+  /* Copyright */
+  .copyright {
+    text-align: left;
+  }
+
+  .copyright .list-unstyled li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .copyright .statement {
+    text-align: right;
+  }
+  /* end of copyright */
+
+  /* Extra Pages */
+  .ex-cards-1 .card {
+    display: inline-block;
+    width: 296px;
+    vertical-align: top;
+  }
+
+  .ex-cards-1 .card:nth-of-type(3n + 2) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  /* end of extra pages */
+}
+/* end of min-width 992px */
+
+/* Min-width 1200px */
+@media (min-width: 1200px) {
+  /* General Styles */
+  .container {
+    max-width: 1140px;
+  }
+  /* end of general styles */
+
+  /* Header */
+  .header {
+    overflow: hidden;
+    padding-bottom: 15rem;
+  }
+
+  .header .text-container {
+    margin-top: 0;
+  }
+
+  .header .image-container {
+    position: relative;
+  }
+
+  .header .image-container img {
+    position: absolute;
+    bottom: -520px;
+    left: 60px;
+    max-width: none;
+  }
+  /* end of header */
+
+  /* Services */
+  .cards-1 .card {
+    width: 310px;
+  }
+
+  .cards-1 .card:nth-of-type(3n + 2) {
+    margin-right: 5.5rem;
+    margin-left: 5.5rem;
+  }
+  /* end of services */
+
+  /* Details 1 */
+  .basic-1 .text-container {
+    margin-top: 5rem;
+    margin-left: 2.75rem;
+  }
+  /* end of details 1 */
+
+  /* Details 2 */
+  .basic-2 .text-container {
+    margin-top: 6rem;
+    margin-right: 3rem;
+  }
+
+  .basic-2 .image-container {
+    text-align: right;
+  }
+  /* end of details 2 */
+
+  /* Features */
+  .accordion-1 .accordion {
+    margin-bottom: 0;
+  }
+
+  .accordion-1 .image-container {
+    text-align: right;
+  }
+  /* end of features */
+
+  /* Testimonials */
+  .cards-2 .card {
+    width: 356px;
+  }
+
+  .cards-2 .card:nth-of-type(3n + 2) {
+    margin-right: 1.125rem;
+    margin-left: 1.125rem;
+  }
+  /* end of testimonials */
+
+  /* Invitation */
+  .basic-3 .text-container {
+    padding-top: 8rem;
+    padding-bottom: 8.5rem;
+  }
+  /* end of invitation */
+
+  /* Contact */
+  .form-1 .text-container {
+    margin-top: 1.5rem;
+    margin-right: 2.75rem;
+  }
+
+  .form-1 form {
+    margin-left: 2.75rem;
+  }
+  /* end of contact */
+
+  /* Footer */
+  .footer .decoration-circles {
+    left: 0;
+  }
+  /* end of footer */
+
+  /* Extra Pages */
+  .ex-cards-1 .card {
+    width: 336px;
+  }
+
+  .ex-cards-1 .card:nth-of-type(3n + 2) {
+    margin-right: 2.875rem;
+    margin-left: 2.875rem;
+  }
+  /* end of extra pages */
+}
+/* end of min-width 1200px */
+
 /************************/
 /*                      */
 /* End article detaile  */
