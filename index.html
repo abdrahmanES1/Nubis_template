@@ -61,7 +61,7 @@
         </div>
       </div>
     </nav>
-    
+<main>
     <header class="header" id="home">
       <div class="container  box-content">
         <div class="col-1">
@@ -341,18 +341,19 @@
           </ul>
         </div>
         <div class="col col-2 ">
-          <form action="">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Industry">
-            <input type="text" placeholder="Your Product">
-            <button type="submit" class="sp-btn">Submit</button>
+          <form action="#" id="contact-us">
+            <input type="text" placeholder="Name"  name="from_name" id="from_name">
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Industry" name="message" id="message">
+            <input type="text" placeholder="Your Product" name="message" id="message">
+            <button type="submit" class="sp-btn" id="submit-btn">Submit</button>
           </form>
           
         </div>
 
     </div>
   </section>
+</main>
 
   <footer class="footer">
     <div class="container">
@@ -399,13 +400,13 @@
     <div class="container">
       <div class="footer-links d-flex">
 
-      <div class="right-side">
+      <div class="left-side d-flex">
         <a href="">Article Details</a>
         <a href="">Terms & Conditions</a>
         <a href="">Privacy Policy</a>
       </div>
       
-      <div class="left-side d-flex">
+      <div class="right-side d-flex">
         <p>Copyright © Your name</p>
         <p>Distributed by </p>
       </div>
@@ -419,6 +420,8 @@
       <img src="/resourses/img/up-arrow.png" alt="up-arrow">
     </button>
 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="/resourses/js/animation.js"></script>
 <script src="/resourses/js/app.js"></script>

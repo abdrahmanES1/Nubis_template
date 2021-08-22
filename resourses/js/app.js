@@ -31,3 +31,27 @@ document.body.onscroll = function() {
 upBtn.onclick =_=>{
     window.scrollTo(0,0);
 }
+(function () {
+    emailjs.init("user_O7s1MPbunOASaEAKRJ0ac");
+  })();
+
+
+const btn = document.getElementById('submit-btn');
+
+document.getElementById('contact-us').addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.innerText = 'Sending...';
+
+   const serviceID = 'service_oszazoi';
+   const templateID = 'template_tkfvm8n';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.innerText = 'Submit';
+      alert('Sent!');
+    }, (err) => {
+      btn.innerText = 'Submit';
+      alert(JSON.stringify(err));
+    });
+});

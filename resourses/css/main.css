@@ -503,7 +503,6 @@ nav .navigation .burger-icon span {
 .invitation .box-content p {
   font-size: 1.125rem;
   line-height: 1.75rem;
-  width: 35rem;
 }
 .invitation .box-content a {
   padding: 1rem 2rem;
@@ -519,12 +518,21 @@ nav .navigation .burger-icon span {
 }
 @media (max-width: 992px) {
   .invitation .box-content {
-    padding: 4rem;
-  }
-  .invitation .box-content p {
-    width: 30rem;
+    padding: 2rem;
   }
 }
+@media (max-width: 768px) {
+  .invitation .box-content h2 {
+    font-size: 1.6rem;
+  }
+  .invitation .box-content p {
+    font-size: 1rem;
+  }
+  .invitation .box-content a {
+    font-size: 1rem;
+  }
+}
+
 /* End invitation */
 
 /* contact section  */
@@ -533,10 +541,11 @@ nav .navigation .burger-icon span {
   /* background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255)); */
   padding: 3rem 0px;
 }
+
 .contact-me .box-content .col {
   padding: 2rem;
+  width: 100%;
 }
-
 .contact-me .box-content .col-1 h5 {
   color: var(--red);
   margin-bottom: -1rem;
@@ -559,7 +568,6 @@ nav .navigation .burger-icon span {
 .contact-me .box-content .col-2 input {
   padding: 1rem;
   margin-bottom: 1rem;
-  width: 30rem;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 10px;
@@ -567,8 +575,9 @@ nav .navigation .burger-icon span {
 @media (max-width: 992px) {
   .contact-me .box-content {
     flex-direction: column;
-    text-align: center;
   }
+}
+@media (max-width: 768px) {
 }
 /* End contact section*/
 
@@ -578,6 +587,12 @@ footer.footer {
   background: rgb(252, 250, 251) url("/resourses/img/decoration-circles.png")
     no-repeat left;
   padding: 5rem auto;
+}
+.footer h2 {
+  padding-top: 4rem;
+}
+.footer .social-media-icons {
+  padding-bottom: 3rem;
 }
 
 .footer .social-media-icons .fa-stack {
@@ -610,7 +625,37 @@ footer.footer {
   margin-bottom: 2rem;
 }
 
-.footer .footer-links {
+.footer .footer-links .left-side a,
+.footer .footer-links .right-side p {
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  color: var(--gray);
+}
+.footer .footer-links .left-side a:hover {
+  color: var(--sec-blue);
 }
 
+.footer .footer-links {
+  align-items: baseline;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-links .right-side,
+  .footer .footer-links .left-side,
+  .footer .footer-links {
+    flex-direction: column;
+  }
+  .footer .footer-links {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-links .left-side a,
+  .footer .footer-links .right-side p {
+    padding-top: 1rem;
+  }
+  .footer h2 {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+}
 /* End footer section */
