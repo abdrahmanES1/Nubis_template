@@ -4,11 +4,9 @@ const upBtn = document.querySelector("#up-btn");
 const navBar = document.querySelector('.navigation-bar');
 
 
-
 x.onclick =  function() {
     navItems.classList.toggle('drop-down-is-showing');
 }
-
 
 document.body.onscroll = function() {
     
@@ -31,9 +29,11 @@ document.body.onscroll = function() {
 upBtn.onclick =_=>{
     window.scrollTo(0,0);
 }
-(function () {
+
+
+(function () { 
     emailjs.init("user_O7s1MPbunOASaEAKRJ0ac");
-  })();
+})();
 
 
 const btn = document.getElementById('submit-btn');
@@ -55,3 +55,39 @@ document.getElementById('contact-us').addEventListener('submit', function(event)
       alert(JSON.stringify(err));
     });
 });
+
+// let main = document.querySelector('main');
+
+// function loadHtmlPage(url) {
+//      return new Promise((resolve, reject)=>{
+//         const request = new XMLHttpRequest();
+
+//         request.onreadystatechange = function() {
+//             if(this.readyState === 4 && this.status ===200){
+//                resolve(this.responseText) ;
+//             }
+//             else{
+//                 reject(this.statusText);
+//             }
+//         }
+
+//         request.open(
+//             "GET",
+//             url,
+//             true
+//          );
+//         request.send();
+
+//     })
+// };
+
+// let ArticleDetailsBtn = document.querySelector('#Article-Details'),
+//     TermsConditionsBtn = document.querySelector('#Terms-Conditions'),
+//     PrivacyPolicyBtn = document.querySelector("#Privacy-Policy");
+
+// console.log(ArticleDetailsBtn);
+
+
+// ArticleDetailsBtn.onclick = loadHtmlPage('/resourses/html/article-details.html')
+// .then(value=> main.innerHTML = value)
+// .catch(err=>console.log(err))
