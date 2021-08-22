@@ -7,11 +7,6 @@ const navBar = document.querySelector('.navigation-bar');
 // aos animation init
 AOS.init();
 
-//  EMail.js init
-(function () { 
-    emailjs.init("user_O7s1MPbunOASaEAKRJ0ac");
-})();
-
 
 // show the menu in mobile
 burgerIcon.onclick =  function() {
@@ -44,26 +39,15 @@ upBtn.onclick =_=>{
 
 
 
+// slider of costumers
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+    slidesPerView: 2,
+      spaceBetween:10,
+    autoplay: {
+        delay: 2000,
+    }
 
-// send mail
-const btn = document.getElementById('submit-btn');
-
-document.getElementById('contact-us').addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.innerText = 'Sending...';
-
-   const serviceID = 'service_oszazoi';
-   const templateID = 'template_tkfvm8n';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.innerText = 'Submit';
-      alert('Sent!');
-    }, (err) => {
-      btn.innerText = 'Submit';
-      alert(JSON.stringify(err));
-    });
 });
-
-
