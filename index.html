@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The MDN Web Docs site
-  provides information about Open Web technologies
-  including HTML, CSS, and APIs for both Web sites and
-  progressive web apps.">
+    <meta name="description" content="description">
+    <meta name="author" content="Your name">
     <title>Nubis</title>
     <link rel="shortcut icon" href="/resourses/img/favicon.png" type="image/x-icon">
    <!-- link to normalize for init style of the page -->
@@ -20,6 +18,8 @@
     <script src="https://kit.fontawesome.com/bc09e815cb.js" crossorigin="anonymous"></script>
     <!-- cdn  of swiper.js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- aos animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 <body>
 
@@ -62,16 +62,15 @@
       </div>
     </nav>
 
-
     <header class="header" id="home">
       <div class="container  box-content">
-        <div class="col-1">
+        <div class="col-1" data-aos="fade-right">
           <h1>Find influencers for your products</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, neque ut ultrices sollicitudin</p>
           <a href="#services" class="sp-btn">Offred services</a>
         </div>
         <div>
-          <div class="col-2">
+          <div class="col-2 "data-aos="fade-left">
             <img class="img-fluid" src="/resourses/img/header-image.png" alt="" />
           </div>
         </div>
@@ -83,7 +82,7 @@
         <h2>Explore our services</h2>
         <div class="box-content d-flex">
 
-          <div class="col col-1">
+          <div class="col col-1" data-aos="fade-right">
             <div class="card">
               <div class="card-title">
                 <i class="fas fa-headphones-alt fa-2x"></i>
@@ -96,7 +95,7 @@
             </div>
           </div>
 
-          <div class="col col-2">
+          <div class="col col-2" data-aos="fade-top">
             <div class="card">
               <div class="card-title">
                 <i class="far fa-clipboard fa-2x"></i>
@@ -109,7 +108,7 @@
             </div>
           </div>
 
-          <div class="col col-3">
+          <div class="col col-3 "data-aos="fade-left">
             <div class="card">
               <div class="card-title">
                 <i class="far fa-comments fa-2x"></i>
@@ -131,11 +130,11 @@
     <section class="details" id="details">
       <div class="container">
         <div class="box-content d-flex">
-          <div class="col col-1">
+          <div class="col col-1" data-aos="fade-right">
             <img src="/resourses/img/details-1.png" alt="" class="img-fluid">
           </div>
-          <div class="col col-2">
-            <h5>WHAT WE DO</h5>
+          <div class="col col-2" data-aos="fade-left">
+            <h5 data-aos="fade-down-left">WHAT WE DO</h5>
             <h2>The right influencer can boost your conversion</h2>
             <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse platea
             dictumst. Aenean molestie mauris eget sapien sagittis, a bibendum magna tincidunt</p>
@@ -149,15 +148,15 @@
     <div class="container">
       <div class="box-content d-flex">
         
-        <div class="col col-2">
-          <h5>ABOUT US</h5>
+        <div class="col col-2" data-aos="fade-right">
+          <h5 data-aos="fade-down-right">ABOUT US</h5>
           <h2>We have ten years experience in marketing</h2>
           <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse platea
           dictumst. Aenean molestie mauris eget sapien sagittis, a bibendum magna tincidunt</p>
           <button class="sp-btn">Details</button>
         </div>
 
-        <div class="col col-1">
+        <div class="col col-1" data-aos="fade-left">
           <img src="/resourses/img/details-2.png" alt="" class="img-fluid">
         </div>
       </div>
@@ -166,31 +165,31 @@
 
   <section class="features" id="features">
     <div class="container">
-      <div class="box-title">
+      <div class="box-title" data-aos="fade-down">
         <h2>Online service features</h2>
         <p>Suspendisse vitae enim arcu. Aliquam convallis risus a felis blandit, at mollis nisi bibendum. Aliquam nec purus at ex
         blandit posuere nec a odio. Proin lacinia dolor justo</p>
       </div>
       <div class="box-content d-flex">
         <div class="col col-1 d-flex-col">
-          <div class="row row-1 ">
+          <div class="row row-1 " data-aos="fade-right">
             <i class="fas fa-desktop fa-2x"></i>
             <h4>Analyse the product and design plan</h4>
           </div>
-          <div class="row row-2">
+          <div class="row row-2" data-aos="fade-right">
             <i class="fas fa-microphone fa-2x"></i>
             <h4>Find the market opportunities</h4>
           </div>
-          <div class="row row-3">
+          <div class="row row-3" data-aos="fade-right">
             <i class="fas fa-video fa-2x"></i>
             <h4>Prepare the product launch campaign</h4>
           </div>
-          <div class=" row row-4">
+          <div class=" row row-4" data-aos="fade-right">
             <i class="fas fa-tools fa-2x"></i>
             <h4>Evaluate the campaign and adjust</h4>
             </div>
         </div>
-        <div class="col col-2">
+        <div class="col col-2" data-aos="fade-left">
           <img src="/resourses/img/features-dashboard.png" alt="" class="img-fluid">
         </div>
       </div>
@@ -319,9 +318,9 @@
     
       <div class="container">
         <div class="box-content d-flex-col">
-        <h2>Find the right influencer for your product</h2>
-        <p>Eu convallis arcu ultrices in. Mauris ornare libero et pharetra hendrerit. Curabitur elementum lectus quis vioc tellus</p>
-        <a href="#">Get free quote</a>
+        <h2 data-aos="fade-down">Find the right influencer for your product</h2>
+        <p data-aos="fade-down">Eu convallis arcu ultrices in. Mauris ornare libero et pharetra hendrerit. Curabitur elementum lectus quis vioc tellus</p>
+        <a href="#" data-aos="fade-top">Get free quote</a>
       </div>
     </div>
   </section>
@@ -329,8 +328,8 @@
   <section class="contact-me" id="contact-me">
     <div class="container">
       <div class="box-content d-flex">
-        <div class="col col-1">
-          <h5>GET QUOTE</h5>
+        <div class="col col-1" data-aos="fade-right">
+          <h5 data-aos="fade-down-right">GET QUOTE</h5>
           <h2>Submit the form for quote</h2>
           <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse
             platea
@@ -341,13 +340,13 @@
             <li>Sem pulvinar suscipit sit amet quis lorem. Sed risus</li>
           </ul>
         </div>
-        <div class="col col-2 ">
+        <div class="col col-2" >
           <form action="#" id="contact-us">
-            <input type="text" placeholder="Name"  name="from_name" id="from_name">
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Industry" name="message" id="message">
-            <input type="text" placeholder="Your Product" name="message" id="message">
-            <button type="submit" class="sp-btn" id="submit-btn">Submit</button>
+            <input type="text" placeholder="Name"  name="from_name" id="from_name" data-aos="fade-left">
+            <input type="email" placeholder="Email" required data-aos="fade-left">
+            <input type="text" placeholder="Industry" name="message" id="message" data-aos="fade-left">
+            <input type="text" placeholder="Your Product" name="message" id="message" data-aos="fade-left">
+            <button type="submit" class="sp-btn" id="submit-btn" data-aos="fade-left">Submit</button>
           </form>
           
         </div>
@@ -417,14 +416,17 @@
      </footer>
 
 
-    <button id="up-btn" name="up-btn">
+    <button id="up-btn" name="up-btn" data-aos="fade-top">
       <img src="/resourses/img/up-arrow.png" alt="up-arrow">
     </button>
 
-
+<!-- aos aniamation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Email.js -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<!-- swiper.js -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="/resourses/js/animation.js"></script>
+<!-- app js -->
 <script src="/resourses/js/app.js"></script>
 </body>
 </html>

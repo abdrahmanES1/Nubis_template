@@ -2,7 +2,12 @@ const x = document.querySelector('.burger-icon') ;
 const navItems = document.querySelector('nav .navigation .nav-items');
 const upBtn = document.querySelector("#up-btn");
 const navBar = document.querySelector('.navigation-bar');
-
+// aos animation init
+AOS.init();
+//  EMail.js init
+(function () { 
+    emailjs.init("user_O7s1MPbunOASaEAKRJ0ac");
+})();
 
 x.onclick =  function() {
     navItems.classList.toggle('drop-down-is-showing');
@@ -31,9 +36,7 @@ upBtn.onclick =_=>{
 }
 
 
-(function () { 
-    emailjs.init("user_O7s1MPbunOASaEAKRJ0ac");
-})();
+
 
 
 const btn = document.getElementById('submit-btn');
@@ -56,38 +59,4 @@ document.getElementById('contact-us').addEventListener('submit', function(event)
     });
 });
 
-// let main = document.querySelector('main');
 
-// function loadHtmlPage(url) {
-//      return new Promise((resolve, reject)=>{
-//         const request = new XMLHttpRequest();
-
-//         request.onreadystatechange = function() {
-//             if(this.readyState === 4 && this.status ===200){
-//                resolve(this.responseText) ;
-//             }
-//             else{
-//                 reject(this.statusText);
-//             }
-//         }
-
-//         request.open(
-//             "GET",
-//             url,
-//             true
-//          );
-//         request.send();
-
-//     })
-// };
-
-// let ArticleDetailsBtn = document.querySelector('#Article-Details'),
-//     TermsConditionsBtn = document.querySelector('#Terms-Conditions'),
-//     PrivacyPolicyBtn = document.querySelector("#Privacy-Policy");
-
-// console.log(ArticleDetailsBtn);
-
-
-// ArticleDetailsBtn.onclick = loadHtmlPage('/resourses/html/article-details.html')
-// .then(value=> main.innerHTML = value)
-// .catch(err=>console.log(err))
