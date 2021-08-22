@@ -1,18 +1,24 @@
-const x = document.querySelector('.burger-icon') ;
+// variables
+const burgerIcon = document.querySelector('.burger-icon') ;
 const navItems = document.querySelector('nav .navigation .nav-items');
 const upBtn = document.querySelector("#up-btn");
 const navBar = document.querySelector('.navigation-bar');
+
 // aos animation init
 AOS.init();
+
 //  EMail.js init
 (function () { 
     emailjs.init("user_O7s1MPbunOASaEAKRJ0ac");
 })();
 
-x.onclick =  function() {
+
+// show the menu in mobile
+burgerIcon.onclick =  function() {
     navItems.classList.toggle('drop-down-is-showing');
 }
 
+// fixed navbar 
 document.body.onscroll = function() {
     
     if(window.scrollY > 5){
@@ -31,6 +37,7 @@ document.body.onscroll = function() {
 
 }
 
+// top button
 upBtn.onclick =_=>{
     window.scrollTo(0,0);
 }
@@ -38,7 +45,7 @@ upBtn.onclick =_=>{
 
 
 
-
+// send mail
 const btn = document.getElementById('submit-btn');
 
 document.getElementById('contact-us').addEventListener('submit', function(event) {
